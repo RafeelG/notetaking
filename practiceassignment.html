@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.taskbox  {
+display: flex ;
+flex-direction: row;
+justify-content: center;
+}
+.taskbox > h2{
+    font-size: xx-large;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+.navigation{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.header{
+    background-color: gray;
+    margin: 0 auto;
+    max-height: fit-content;
+    max-width: 2000px;
+    
+}
+.navigation > h3
+{
+    color:darkmagenta;
+    font-family:'Times New Roman', Times, serif;
+    background-color:cyan;
+    font-size:medium;
+    margin: 10px 20px;
+    padding: 3px;
+    border-radius: 10px;
+    height: fit-content;
+    width: 110px;
+    cursor:pointer;
+    margin-bottom:5px;
+    text-align: center;
+}
+.total{
+    display: flex;
+    flex-direction: column;
+}
+.total > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+}
+.total > h4{
+    margin-top: 0;
+}
+.everything{
+    max-width: 2000px;
+    margin-left: 255px;
+    margin-right: 255px;
+    background-color: burlywood;
+    max-height: 3000px;
+}
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+.checkbox-container > p{
+    margin-top: 0;
+    margin-left:15px;
+}
+.checkbox-label>label>h2{
+    margin-bottom: 20px;
+}
+input[type="text"] {
+margin-bottom:5px;
+vertical-align: text-top;
+width: 300px;
+}
+textarea{
+    margin-top: 2px;
+}
+.test {
+    display: flex;
+    flex-direction: column;
+}
+.save{
+    text-align: center;
+}
+.save > button{
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+<div class="everything">
+<div class="header">
+<div class="taskbox">
+    <h2> My Tasks</h2>
+</div>
+<div class="navigation">
+    <h3 class="nav"><a href="Week 02/images/rainbow fox.jpg">ALL TASKS</a></h3>
+    <h3 class="nav"><a href="Week 02/images/nightmare freddy image.jpg">PENDING</a></h3>
+    <h3 class="nav"><a href="Week3/images/Me.png">COMPLETED</a></h3>
+</div>
+</div>
+<div class="total">
+    <h1>ALL TASKS</h1>
+    <h4>3 tasks total</h4>
+</div>
+<div class="checkbox-container">
+    <div class="checkbox-label">
+      <input type="checkbox" id="checkbox1">
+      <label for="checkbox1"><h2>This is my first task</h2></label>
+    </div>
+  <p>I like myself sometimes you know </p>
+    <div class="checkbox-label">
+      <input type="checkbox" id="checkbox2">
+      <label for="checkbox2"><b>Task #2:</b></label>
+    </div>
+    <p>I'm starting to understand things </p>
+
+    <div class="checkbox-label">
+      <input type="checkbox" id="checkbox3">
+      <label for="checkbox3">This is a test</label>
+    </div>
+   <p>Life's going good</p>
+  </div>
+
+  <hr>
+<h3>Create a new task</h3>
+<div class="test">
+<input type="text" id="text 1">
+<textarea id="textbox" class="bigger-input">task description</textarea>
+</div>
+
+<div class="save">
+    <button>Save Task</button>
+</div>
+
+</div>
+
+
+</body>
+
+</html>
